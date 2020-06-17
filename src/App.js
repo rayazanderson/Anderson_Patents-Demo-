@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
+import Img from './images/anderson_patents.png';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: 'Anderson Patents',
+      headerLinks: [
+        { title: 'home', path: '/' },
+        { title: 'about', path: '/about' },
+        { title: 'work', path: '/work' },
+        { title: 'contact', path: '/contact' }
+      ],
+      home: {
+        title: 'Protect your Creativity',
+        subTitle: 'Own your Ideas',
+        text: 'Checkout my services'
+      },
+      about: {
+        title: 'About Me',
+        subTitle: 'Own your Ideas',
+        text: 'Checkout my services'
+      },
+      work: {
+        title: 'What I have done',
+        subTitle: 'Own your Ideas',
+        text: 'Checkout my services'
+      },
+      contact: {
+        title: 'Contact Me Here',
+        subTitle: 'Own your Ideas',
+        text: 'Checkout my services'
+      },
+    }
+  }
+
+  render() {
+    return (
+      <div> <center>< img src={Img} alt="pic" /></center> </div>
+    );
+  }
 }
 
 export default App;
