@@ -1,6 +1,9 @@
 import React from 'react';
 import Img from './images/anderson_patents.png';
 import './App.css';
+import Navbar from '@material-ui/core/Navbar'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Container from '@material-ui/core/Container'
 
 class App extends React.Component {
 
@@ -39,7 +42,14 @@ class App extends React.Component {
 
   render() {
     return (
-      <div> <center>< img src={Img} alt="pic" /></center> </div>
+      <Router>
+        <Container className="p-0">
+          <Navbar>
+
+          </Navbar>
+        </Container>
+      </Router>
+      // <div> <center>< img src={Img} alt="pic" /></center> </div>
     );
   }
 }
