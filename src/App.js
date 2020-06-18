@@ -1,52 +1,49 @@
-import React from 'react';
-import Img from './images/anderson_patents.png';
-import './App.css';
-import Navbar from '@material-ui/core/Navbar'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Container from '@material-ui/core/Container'
-
+import React from "react";
+import Img from "./images/anderson_patents.png";
+import "./App.css";
+import Navbar from "@material-ui/core/Navbar";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Container from "@material-ui/core/Container";
+// Remember to add some framer motion for the frame transitions
 class App extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      title: 'Anderson Patents',
+      title: "Anderson Patents",
       headerLinks: [
-        { title: 'home', path: '/' },
-        { title: 'about', path: '/about' },
-        { title: 'work', path: '/work' },
-        { title: 'contact', path: '/contact' }
+        { title: "home", path: "/" },
+        { title: "about", path: "/about" },
+        { title: "work", path: "/work" },
+        { title: "contact", path: "/contact" },
       ],
       home: {
-        title: 'Protect your Creativity',
-        subTitle: 'Own your Ideas',
-        text: 'Checkout my services'
+        title: "Protect your Creativity",
+        subTitle: "Own your Ideas",
+        text: "Checkout my services",
       },
       about: {
-        title: 'About Me',
-        subTitle: 'Own your Ideas',
-        text: 'Checkout my services'
+        title: "About Me",
+        subTitle: "Own your Ideas",
+        text: "Checkout my services",
       },
       work: {
-        title: 'What I have done',
-        subTitle: 'Own your Ideas',
-        text: 'Checkout my services'
+        title: "What I have done",
+        subTitle: "Own your Ideas",
+        text: "Checkout my services",
       },
       contact: {
-        title: 'Contact Me Here',
-        subTitle: 'Own your Ideas',
-        text: 'Checkout my services'
+        title: "Contact Me Here",
+        subTitle: "Own your Ideas",
+        text: "Checkout my services",
       },
-    }
+    };
   }
 
   render() {
     return (
       <Router>
         <Container className="p-0">
-          <Navbar>
-
-          </Navbar>
+          <Navbar></Navbar>
         </Container>
       </Router>
       // <div> <center>< img src={Img} alt="pic" /></center> </div>
