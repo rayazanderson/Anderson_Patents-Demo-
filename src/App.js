@@ -1,11 +1,20 @@
 import React from "react";
-import Img from "./images/anderson_patents.png";
 import "./App.css";
-import Navbar from "@material-ui/core/Navbar";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "@material-ui/core/Container";
+import Navbar from "./components/navbar/Navbar";
+
+import GlobalStyle from "./styles/Global";
 // Remember to add some framer motion for the frame transitions
 class App extends React.Component {
+  state = {
+    navbarOpen: false,
+  };
+
+  handleNavbar = () => {
+    this.setState({ navbarOpen: !this.state.navbarOpen });
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -43,10 +52,13 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0">
-          <Navbar></Navbar>
+          <Navbar
+            navbarState={this.state.navbarOpen}
+            handleNavbar={this.handleNavbar}
+          />
+          <GlobalStyle />
         </Container>
       </Router>
-      // <div> <center>< img src={Img} alt="pic" /></center> </div>
     );
   }
 }
