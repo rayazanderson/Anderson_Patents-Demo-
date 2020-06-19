@@ -1,9 +1,12 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Container from "@material-ui/core/Container";
-import Navbar from "./components/navbar/Navbar";
 
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+
+import Container from "@material-ui/core/Container";
 import GlobalStyle from "./styles/Global";
 // Remember to add some framer motion for the frame transitions
 class App extends React.Component {
@@ -57,6 +60,12 @@ class App extends React.Component {
             handleNavbar={this.handleNavbar}
           />
           <GlobalStyle />
+          <Route
+            path="/"
+            exact
+            render={() => <Home title={this.state.home.title} />}
+          />
+          <Footer />
         </Container>
       </Router>
     );
