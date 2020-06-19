@@ -5,8 +5,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu.js";
-import Title from "./Title";
-
+import HomeIcon from "@material-ui/icons/Home";
+import EmailIcon from "@material-ui/icons/Email";
+import PortraitIcon from "@material-ui/icons/Portrait";
+import MoreIcon from "@material-ui/icons/More";
 const Navbar = (props) => {
   const barAnimation = useSpring({
     from: { transform: "translate3d(0, -10rem, 0)" },
@@ -25,12 +27,22 @@ const Navbar = (props) => {
       <NavBar style={barAnimation}>
         <FlexContainer>
           <Brand />
-          <Title />
+          {/* <Navbar.Brand>Anderson Patents</Navbar.Brand> */}
           <NavLinks style={linkAnimation}>
-            <a href="/">Home</a>
-            <a href="/">About Me</a>
-            <a href="/">My Services</a>
-            <a href="/">Contact Me</a>
+            <a href="/">
+              <HomeIcon style={{ fontSize: 20 }} />
+              Home
+            </a>
+            <a href="/">
+              <PortraitIcon style={{ fontSize: 20 }} /> About Me
+            </a>
+            <a href="/">
+              <MoreIcon style={{ fontSize: 20 }} /> My Services
+            </a>
+            <a href="/">
+              <EmailIcon style={{ fontSize: 20 }} />
+              Contact Me
+            </a>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
@@ -64,9 +76,9 @@ const FlexContainer = styled.div`
   max-width: 120rem;
   display: flex;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
   justify-content: space-between;
-  height: 5rem;
+  height: 8rem;
 `;
 
 const NavLinks = styled(animated.ul)`
