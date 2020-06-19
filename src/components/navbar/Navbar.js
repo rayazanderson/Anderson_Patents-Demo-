@@ -9,6 +9,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import EmailIcon from "@material-ui/icons/Email";
 import PortraitIcon from "@material-ui/icons/Portrait";
 import MoreIcon from "@material-ui/icons/More";
+
 const Navbar = (props) => {
   const barAnimation = useSpring({
     from: { transform: "translate3d(0, -10rem, 0)" },
@@ -33,13 +34,13 @@ const Navbar = (props) => {
               <HomeIcon style={{ fontSize: 20 }} />
               Home
             </a>
-            <a href="/">
+            <a href="/about">
               <PortraitIcon style={{ fontSize: 20 }} /> About Me
             </a>
-            <a href="/">
+            <a href="/works">
               <MoreIcon style={{ fontSize: 20 }} /> My Services
             </a>
-            <a href="/">
+            <a href="/contact">
               <EmailIcon style={{ fontSize: 20 }} />
               Contact Me
             </a>

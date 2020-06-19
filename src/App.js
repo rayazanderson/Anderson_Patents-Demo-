@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Works from "./pages/Works";
+import Contact from "./pages/Contact";
 
 import Container from "@material-ui/core/Container";
 import GlobalStyle from "./styles/Global";
+import { spacing } from "@material-ui/system";
 // Remember to add some framer motion for the frame transitions
 class App extends React.Component {
   state = {
@@ -35,18 +39,12 @@ class App extends React.Component {
       },
       about: {
         title: "About Me",
-        subTitle: "Own your Ideas",
-        text: "Checkout my services",
       },
-      work: {
-        title: "What I have done",
-        subTitle: "Own your Ideas",
-        text: "Checkout my services",
+      works: {
+        title: "Services I provide",
       },
       contact: {
         title: "Contact Me Here",
-        subTitle: "Own your Ideas",
-        text: "Checkout my services",
       },
     };
   }
@@ -54,7 +52,8 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0">
+        <Container className="pt-5">shhhh I'm a Secret</Container>
+        <Container className="mt-5">
           <Navbar
             navbarState={this.state.navbarOpen}
             handleNavbar={this.handleNavbar}
@@ -63,7 +62,25 @@ class App extends React.Component {
           <Route
             path="/"
             exact
-            render={() => <Home title={this.state.home.title} />}
+            render={() => (
+              <Home
+                title={this.state.home.title}
+                subTitle={this.state.home.subTitle}
+                text={this.state.home.text}
+              />
+            )}
+          />
+          <Route
+            path="/about"
+            render={() => <About title={this.state.about.title} />}
+          />
+          <Route
+            path="/works"
+            render={() => <Works title={this.state.works.title} />}
+          />
+          <Route
+            path="/contact"
+            render={() => <Contact title={this.state.contact.title} />}
           />
           <Footer />
         </Container>

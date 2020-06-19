@@ -1,11 +1,9 @@
 import React from "react";
 
+import Hero from "../components/Hero";
+
 function Home(props) {
-  return (
-    <div>
-      <p>test</p>
-    </div>
-  );
+  return <Hero />;
 }
 
 export default Home;
