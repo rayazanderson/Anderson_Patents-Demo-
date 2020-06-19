@@ -3,12 +3,11 @@
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 100px;
-  padding-top: 50px;
+  margin-top: 50px;
   margin-bottom: 100px;
   padding: 100px;
   border-radius: 50px;
-  height: 500px;
+  height: 300px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
