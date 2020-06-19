@@ -1,12 +1,23 @@
-/* Universal Css start */
-/* universal css end */
-/* home css start */
-/* home css end */
-/* about css start */
-/* about css end */
-/* work css start */
-/* work css end */
-/* contact css start */
-/* contact css end */
-/* footer css start */
-/* footer css end */
+.jumbotron {
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  padding: 100px;
+  border-radius: 50px;
+  height: 500px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  font-family: "IBM Plex Serif", serif;
+  color: #dfe6e9;
+}
+
+h3 {
+  font-family: "IBM Plex Serif", serif;
+  color: #dfe6e9;
+}

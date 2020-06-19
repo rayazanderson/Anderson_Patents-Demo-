@@ -33,9 +33,9 @@ class App extends React.Component {
         { title: "contact", path: "/contact" },
       ],
       home: {
-        title: "Protect your Creativity",
-        subTitle: "Own your Ideas",
-        text: "Checkout my services",
+        title: "Welcome to Anderson Patents",
+        subTitle: "Protect your Creativity",
+        text: "Own your Ideas",
       },
       about: {
         title: "About Me",
@@ -52,7 +52,9 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="pt-5">shhhh I'm a Secret</Container>
+        <Container className="pt-5">
+          <h1>&nbsp;</h1>
+        </Container>
         <Container className="mt-5">
           <Navbar
             navbarState={this.state.navbarOpen}

@@ -71,10 +71,11 @@ const NavBar = styled(animated.nav)`
   background: #151b54;
   z-index: 1;
   font-size: 1.4rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 `;
 
 const FlexContainer = styled.div`
-  max-width: 120rem;
+  max-width: 130rem;
   display: flex;
   margin: auto;
   padding: 0 3rem;
