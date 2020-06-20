@@ -89,7 +89,7 @@ const NavLinks = styled(animated.ul)`
   margin: auto 0;
 
   & a {
-    font-family: "IBM Plex Serif", serif;
+    font-family: "Abhaya Libre", serif;
     color: #dfe6e9;
     text-transform: uppercase;
     border-bottom: 1px solid transparent;
@@ -97,6 +97,8 @@ const NavLinks = styled(animated.ul)`
     transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
 
     &:hover {
       color: #fdcb6e;

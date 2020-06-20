@@ -5,18 +5,18 @@
   background-size: cover;
   margin-top: 50px;
   margin-bottom: 100px;
-  padding: 100px;
+  padding: 50px;
   border-radius: 50px;
   height: 300px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 h1 {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Abhaya Libre", serif;
   color: #dfe6e9;
 }
 
 h3 {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Abhaya Libre", serif;
   color: #dfe6e9;
 }
