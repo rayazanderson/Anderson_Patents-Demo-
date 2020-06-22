@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url("./assets/background.jpg");
+  background-image: url("./assets/images/background.jpg");
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
@@ -20,3 +20,31 @@ h3 {
   font-family: "Abhaya Libre", serif;
   color: #dfe6e9;
 }
+
+/* .a-card {
+  margin: 20px;
+}
+
+.a-card-image {
+  width: auto;
+  padding: 50px;
+  border-radius: 50px;
+  height: 300px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.a-card-info {
+  font-size: 10px;
+  min-height: 100px;
+}
+
+.a-card-title {
+  font-family: "Abhaya Libre", serif;
+  font-size: 24px;
+  margin: 4px;
+}
+
+.a-card-sub-title {
+  font-size: 16px;
+  margin: 0px;
+} */

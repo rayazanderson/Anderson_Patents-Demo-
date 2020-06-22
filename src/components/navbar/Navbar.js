@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu.js";
