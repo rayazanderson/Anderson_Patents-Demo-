@@ -3,12 +3,16 @@ import styled from "styled-components";
 import image from "../../assets/images/anderson-patents.png";
 
 const Profile = () => {
-  return <Image src={image} alt="Company Logo" />;
+  return <Image src={image} alt="Company Logo" class="img-fluid" />;
 };
 
 export default Profile;
 
 const Image = styled.img`
-  height: 90%;
-  margin: auto 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  height: 300px;
+  width: 400px;
+  text-align: center;
 `;

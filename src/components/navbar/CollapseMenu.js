@@ -25,17 +25,17 @@ const CollapseMenu = (props) => {
             </a>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavbar}>
+            <a href="/about" onClick={props.handleNavbar}>
               About Me
             </a>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavbar}>
+            <a href="/works" onClick={props.handleNavbar}>
               Services
             </a>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavbar}>
+            <a href="/contact" onClick={props.handleNavbar}>
               Contact Me
             </a>
           </li>
@@ -51,7 +51,7 @@ export default CollapseMenu;
 const CollapseWrapper = styled(animated.div)`
   background: #2d3436;
   position: fixed;
-  top: 4.5rem;
+  top: 6.5rem;
   left: 0;
   right: 0;
 `;
