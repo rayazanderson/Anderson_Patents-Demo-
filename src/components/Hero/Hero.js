@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../Hero/Hero.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "@material-ui/core/Container";
 import Row from "react-bootstrap/Row";

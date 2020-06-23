@@ -11,8 +11,7 @@ import Contact from "./pages/Contact";
 
 import Container from "@material-ui/core/Container";
 import GlobalStyle from "./styles/Global";
-import { spacing } from "@material-ui/system";
-// Remember to add some framer motion for the frame transitions
+
 class App extends React.Component {
   state = {
     navbarOpen: false,
@@ -39,6 +38,8 @@ class App extends React.Component {
       },
       about: {
         title: "About Me",
+        subTitle: "Protect your Creativity",
+        text: "test",
       },
       works: {
         title: "Services I provide",

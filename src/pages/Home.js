@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Carousel from "../components/Carousel";
+import Hero from "../components/Hero/Hero";
+import Carousel from "../components/Carousel/Carousel";
 import { useSpring, animated } from "react-spring";
 
 function Home(props) {

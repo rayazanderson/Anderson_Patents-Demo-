@@ -1,5 +1,5 @@
 import React from "react";
-import CardInfo from "../components/CardInfo";
+import CardInfo from "../Carousel/CardInfo";
 import { useSpring, animated } from "react-spring";
 
 function Card(props) {

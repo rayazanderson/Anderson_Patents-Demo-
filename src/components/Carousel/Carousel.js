@@ -1,9 +1,9 @@
 import React from "react";
 
-import Card from "../components/Card";
-import gavel from "../assets/images/gavel.jpg";
-import engineering from "../assets/images/engineering.jpg";
-import office from "../assets/images/office.jpg";
+import Card from "../Carousel/Card";
+import gavel from "../../assets/images/gavel.jpg";
+import engineering from "../../assets/images/engineering.jpg";
+import office from "../../assets/images/office.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
