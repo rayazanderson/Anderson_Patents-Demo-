@@ -11,6 +11,7 @@ function About(props) {
   return (
     <animated.div style={style}>
       <Container fluid={true}>
+        <h1>&nbsp;</h1>
         <Paper fluid={true}>
           <Col md="auto" xs={{ order: 12 }}>
             {props.title && (

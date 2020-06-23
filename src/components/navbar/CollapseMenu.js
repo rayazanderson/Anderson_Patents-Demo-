@@ -49,11 +49,13 @@ const CollapseMenu = (props) => {
 export default CollapseMenu;
 
 const CollapseWrapper = styled(animated.div)`
-  background: #2d3436;
+  background: #151b54;
   position: fixed;
   top: 6.5rem;
   left: 0;
   right: 0;
+  overflow: hidden;
+  z-index: 2;
 `;
 
 const NavLinks = styled.ul`
@@ -65,6 +67,7 @@ const NavLinks = styled.ul`
   }
 
   & a {
+    font-family: "Abhaya Libre", serif;
     font-size: 1.4rem;
     line-height: 2;
     color: #dfe6e9;
