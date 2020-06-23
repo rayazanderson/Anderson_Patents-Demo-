@@ -1,10 +1,16 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 function Works(props) {
+  const style = useSpring({ opacity: 1, from: { opacity: 0 } });
+
   return (
-    <div>
-      <p>test</p>
-    </div>
+    <animated.div style={style}>
+      <Jumbotron>
+        <p>test</p>
+      </Jumbotron>
+    </animated.div>
   );
 }
 

@@ -1,10 +1,14 @@
-.paper {
-  margin-top: 20px;
+.jumbotron {
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
   margin-bottom: 100px;
   padding: 50px;
   border-radius: 50px;
-  height: 300px;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  height: 600px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 h2 {
@@ -13,6 +17,7 @@ h2 {
   margin-left: auto;
   text-align: center;
   padding-top: 20px;
+  color: #dfe6e9;
 }
 
 p {
@@ -22,4 +27,5 @@ p {
   padding: 50px;
   margin-right: auto;
   margin-left: auto;
+  color: #dfe6e9;
 }

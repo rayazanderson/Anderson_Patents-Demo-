@@ -5,6 +5,7 @@ import Container from "@material-ui/core/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useSpring, animated } from "react-spring";
+import Carousel from "../Carousel/Carousel";
 
 function Hero(props) {
   const style = useSpring({ opacity: 1, from: { opacity: 0 } });
@@ -29,6 +30,7 @@ function Hero(props) {
                 <h3 className="lead font-weight-light">{props.text}</h3>
               )}
             </Col>
+            <Carousel />
           </Row>
         </Container>
       </Jumbotron>

@@ -7,7 +7,7 @@ import Profile from "../pages/About/Profile";
 function Content(props) {
   return (
     <Container fluid={true}>
-      <Row className="justify-content-auto">
+      <Row className="justify-content-center">
         <Col>
           <Profile />
         </Col>

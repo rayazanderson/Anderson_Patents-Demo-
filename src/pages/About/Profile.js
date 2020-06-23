@@ -14,6 +14,6 @@ const Image = styled.img`
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  width: 400px;
+  width: 380px;
   text-align: center;
 `;
