@@ -5,14 +5,14 @@ import Container from "@material-ui/core/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useSpring, animated } from "react-spring";
-import Carousel from "../Carousel/Carousel";
+// import Carousel from "../Carousel/Carousel";
 
 function Hero(props) {
   const style = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (
     <animated.div className="a-card-info" style={style}>
-      <Jumbotron className="jumbotron-fluid">
+      <Jumbotron className="jumbotron-fluid ">
         <Container fluid={true}>
           <Row className="justify-content-center">
             <Col md={8} sm={12}>

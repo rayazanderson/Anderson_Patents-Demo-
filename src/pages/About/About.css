@@ -7,8 +7,9 @@
   margin-bottom: 100px;
   padding: 50px;
   border-radius: 50px;
-  height: 1000px;
+  height: 400px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
 }
 
 h2 {
@@ -18,14 +19,17 @@ h2 {
   text-align: center;
   padding-top: 20px;
   color: #dfe6e9;
+  display: flex;
 }
 
 p {
   font-family: "Abhaya Libre", serif;
   font-size: 2rem;
   font-weight: 200;
+  margin-right: 70%;
   padding: 50px;
   margin-right: auto;
   margin-left: auto;
   color: #dfe6e9;
+  display: flex;
 }

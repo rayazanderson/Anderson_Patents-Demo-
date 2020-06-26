@@ -11,8 +11,6 @@ export default Profile;
 const Image = styled.img`
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
   height: 300px;
   width: 380px;
   text-align: center;
