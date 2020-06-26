@@ -1,6 +1,5 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-
 import Content from "../../components/Content";
 import { Container } from "@material-ui/core";
 import "../About/About.css";

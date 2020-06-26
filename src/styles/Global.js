@@ -18,7 +18,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Abhaya Libre", serif;
+    background: #848482;
   }
 `;
 

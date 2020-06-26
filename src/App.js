@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About/About";
 import Works from "./pages/Works/Works";
 import Contact from "./pages/Contact";
-
 import Container from "@material-ui/core/Container";
 import GlobalStyle from "./styles/Global";
 
