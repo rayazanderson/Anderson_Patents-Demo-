@@ -12,8 +12,6 @@ function About(props) {
   return (
     <animated.div style={style}>
       <Container fluid={true}>
-        <h1>&nbsp;</h1>
-        {/* <Paper fluid={true}> */}
         <Jumbotron>
           <Col md="auto" xs={{ order: 12 }}>
             {props.title && (
@@ -31,7 +29,6 @@ function About(props) {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </Content>
-          {/* </Paper> */}
         </Jumbotron>
       </Container>
     </animated.div>
