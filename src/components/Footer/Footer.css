@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-h4 {
+h6 {
   font-family: "Abhaya Libre", serif;
   color: #fdcb6e;
   text-transform: uppercase;
@@ -17,9 +17,9 @@ h4 {
   margin: 0 1.5rem;
   transition: all 300ms linear 0s;
   text-decoration: none;
-  cursor: pointer;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 50px;
+  z-index: 5;
 }
 
 a {
@@ -33,7 +33,6 @@ a {
 
 h5:hover {
   color: #fdcb6e;
-  border-bottom: 1px solid #fdcb6e;
 }
 
 h5 {
@@ -43,5 +42,17 @@ h5 {
   margin: 0 1.5rem;
   cursor: pointer;
   font-weight: bold;
-  font-size: 62.5%;
+  font-size: 14px;
+}
+
+h7 {
+  font-family: "Raleway", sans-serif;
+  color: #dfe6e9;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  margin: 0 1.5rem;
+  transition: all 300ms linear 0s;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 5;
 }

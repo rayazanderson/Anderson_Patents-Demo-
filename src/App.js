@@ -9,6 +9,7 @@ import Works from "./pages/Works/Works";
 import Contact from "./pages/Contact";
 import Container from "@material-ui/core/Container";
 import GlobalStyle from "./styles/Global";
+import Background from "./styles/Background";
 
 class App extends React.Component {
   state = {
@@ -51,6 +52,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <Background />
         <Container className="pt-5">
           <h1>&nbsp;</h1>
         </Container>

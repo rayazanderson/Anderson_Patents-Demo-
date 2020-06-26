@@ -5,6 +5,8 @@ import Col from "react-bootstrap/Col";
 import CopyrightIcon from "@material-ui/icons/Copyright";
 import "../Footer/Footer.css";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 /* connection list will have favicon to networking sites/buisness sites */
 
@@ -14,17 +16,17 @@ const Footer = () => {
       <Container>
         <Row className="justify-content-center d-flex">
           <Col>
-            <h4>Connect to me at:</h4>
+            <h6 style={{ fontsize: 22 }}>Let's Connect:</h6>
             <ul className="list-unstyled">
               <li>
                 <a href="/">
                   <LinkedInIcon className=" mb-10" style={{ fontSize: 60 }} />
                 </a>
                 <a href="/">
-                  <LinkedInIcon className=" mb-10" style={{ fontSize: 60 }} />
+                  <FacebookIcon className=" mb-10" style={{ fontSize: 60 }} />
                 </a>
                 <a href="/">
-                  <LinkedInIcon className=" mb-10" style={{ fontSize: 60 }} />
+                  <TwitterIcon className=" mb-10" style={{ fontSize: 60 }} />
                 </a>
                 <a href="/">
                   <LinkedInIcon className=" mb-10" style={{ fontSize: 60 }} />
@@ -33,7 +35,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col>
-            <h4>My Contacts: </h4>
+            <h6 style={{ fontsize: 50 }}>My Contacts: </h6>
             <ul className="list-unstyled">
               <li>
                 <h5>email: test@test.com</h5>
@@ -46,15 +48,15 @@ const Footer = () => {
         </Row>
         <Row className="border-top justify-content-between p-2">
           <Col className="p-0" sm>
-            <h5>
+            <h7>
               {" "}
               <CopyrightIcon className="p-1" />
               {new Date().getFullYear()} Anderson Patents | All rights reserved
               | Terms of Service | Privacy{" "}
-            </h5>
+            </h7>
           </Col>
           <Col className="justify-content-end d-flex p=0" md={4}>
-            This site was made by Raya Anderson
+            <h7>This site was made by Raya Anderson</h7>
           </Col>
         </Row>
       </Container>
