@@ -69,7 +69,7 @@ const NavBar = styled(animated.nav)`
   left: 0;
   background: #151b54;
   z-index: 5000;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 `;
 
@@ -97,7 +97,7 @@ const NavLinks = styled(animated.ul)`
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 
     &:hover {
       color: #fdcb6e;

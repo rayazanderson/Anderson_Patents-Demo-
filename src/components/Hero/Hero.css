@@ -1,13 +1,14 @@
 .jumbotron {
-  background-image: url("../../assets/images/background.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../../assets/images/background.jpg") no-repeat center
+    center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   margin-top: 50px;
   margin-bottom: 100px;
-  padding: 50px;
-  border-radius: 50px;
-  height: 200px;
+  height: auto;
+  width: auto;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
 

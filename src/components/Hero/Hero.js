@@ -30,7 +30,6 @@ function Hero(props) {
                 <h3 className="lead font-weight-light">{props.text}</h3>
               )}
             </Col>
-            <Carousel />
           </Row>
         </Container>
       </Jumbotron>

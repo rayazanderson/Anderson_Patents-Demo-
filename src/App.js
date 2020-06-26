@@ -51,9 +51,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="pt-5">
-          <h1>&nbsp;</h1>
-        </Container>
+        <Container className="pt-5"></Container>
         <Container className="mt-5">
           <Navbar
             navbarState={this.state.navbarOpen}
