@@ -21,14 +21,14 @@ function About(props) {
   return (
     <animated.div style={style}>
       <Hero title={props.title} subTitle={props.subTitle} text={props.text}>
-        <Col md="" xs={{ order: 4 }}>
-          {props.title && (
-            <h2 className="display-2 font-weight-bolder">{props.title}</h2>
-          )}
-        </Col>
+        {/* <Col md="6" xs={{ order: 4 }}>
+        {props.title && (
+          <h2 className="display-2 font-weight-bolder">{props.title}</h2>
+        )}
+      </Col> */}
       </Hero>
       <Content>
-        <p>
+        <p className="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

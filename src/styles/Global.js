@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    height: 100%;
   }
 
   h6 {
@@ -42,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-family: "Abhaya Libre", serif;
-    background: #848482;
+    background: black;
   }
 `;
 
