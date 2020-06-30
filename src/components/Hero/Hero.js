@@ -24,10 +24,10 @@ function Hero(props) {
   return (
     <Styles>
       <animated.div className="a-card-info" style={style}>
-        <Jumbotron className="bg-transparent jumbotron-fluid mt-5">
+        <Jumbotron className="bg-transparent jumbotron-fluid mt-3">
           <Container fluid={true}>
-            <Row className="justify-content-center">
-              <Col md={8} sm={12}>
+            <Row className="justify-content-center d-flex">
+              <Col md={8} sm={8}>
                 {props.title && (
                   <h1 className="display-2 font-weight-bolder justify-content-center">
                     {props.title}

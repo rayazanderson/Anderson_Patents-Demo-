@@ -2,9 +2,9 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import Content from "../../components/Content";
 import styled from "styled-components";
-import { Jumbotron as Jumbo } from "react-bootstrap";
+import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import lightBulb from "../../assets/images/background3.jpg";
-
+import Profile from "../About/Profile";
 import Hero from "../../components/Hero/Hero";
 
 const Styles = styled.div`
@@ -21,6 +21,14 @@ const Styles = styled.div`
     left: 0;
     z-index: -2;
   }
+
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+  }
+
   .overlay {
     background-color: #000;
     opacity: 0.3;
@@ -39,6 +47,26 @@ const Styles = styled.div`
       margin-left: -512px; /* 50% */
     }
   }
+
+  h2 {
+    font-family: "Abhaya Libre", serif;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 20px;
+    color: #dfe6e9;
+    display: flex;
+  }
+
+  p {
+    font-family: "Abhaya Libre", serif;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-right: auto;
+    margin-left: auto;
+    color: #dfe6e9;
+    display: flex;
+  }
 `;
 
 function About(props) {
@@ -48,24 +76,13 @@ function About(props) {
       <Jumbo fluid className="jumbo">
         <div className="overlay"></div>
         <animated.div style={style}>
-          <Hero title={props.title} subTitle={props.subTitle} text={props.text}>
-            {/* <Col md="6" xs={{ order: 4 }}>
-        {props.title && (
-          <h2 className="display-2 font-weight-bolder">{props.title}</h2>
-        )}
-      </Col> */}
-          </Hero>
-          <Content>
-            <p className="lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </Content>
+          <Container className="bg-transparent mr-3">
+            <Hero
+              title={props.title}
+              subTitle={props.subTitle}
+              text={props.text}
+            />
+          </Container>
         </animated.div>
       </Jumbo>
     </Styles>

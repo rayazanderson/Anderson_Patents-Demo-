@@ -1,19 +1,19 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
+import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Profile from "../pages/About/Profile";
 
 function Content(props) {
   return (
-    <Container fluid={true}>
-      <Row className="justify-content-center">
-        <Col>
-          <Profile />
-        </Col>
-        <Col md={8}>{props.children}</Col>
-      </Row>
-    </Container>
+    <Row className="">
+      <Col md={4}>
+        <Profile />
+      </Col>
+      <Col md={8}>
+        <Card className="bg-transparent">{props.children}</Card>
+      </Col>
+    </Row>
   );
 }
 

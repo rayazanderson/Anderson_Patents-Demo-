@@ -77,23 +77,23 @@ const Footer = () => {
       <div className="main-footer">
         <Container>
           <Row className="justify-content-center d-flex mf-5">
-            <Col>
+            <Col className="justify-content-center d-flex">
               <h6 style={{ fontsize: 20 }}>Let's Connect:</h6>
               <ul className="list-unstyled">
                 <li>
                   <a href="/">
-                    <LinkedInIcon className=" mb-10" style={{ fontSize: 30 }} />
+                    <LinkedInIcon className=" mb-4" style={{ fontSize: 30 }} />
                   </a>
                   <a href="/">
-                    <FacebookIcon className=" mb-10" style={{ fontSize: 30 }} />
+                    <FacebookIcon className=" mb-4" style={{ fontSize: 30 }} />
                   </a>
                   <a href="/">
-                    <TwitterIcon className=" mb-10" style={{ fontSize: 30 }} />
+                    <TwitterIcon className=" mb-4" style={{ fontSize: 30 }} />
                   </a>
                 </li>
               </ul>
             </Col>
-            <Col>
+            <Col className="justify-content-center d-flex">
               <h6 style={{ fontsize: 20 }}>My Contacts: </h6>
               <ul className="list-unstyled">
                 <li>

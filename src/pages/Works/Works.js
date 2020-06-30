@@ -4,14 +4,6 @@ import Hero from "../../components/Hero/Hero";
 import { Jumbotron as Jumbo } from "react-bootstrap";
 import styled from "styled-components";
 import lightBulb from "../../assets/images/background3.jpg";
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardGroup,
-  MDBCardImage,
-  MDBCardText,
-  MDBCardBody,
-} from "mdbreact";
 
 const Styles = styled.div`
   .card {
@@ -70,60 +62,6 @@ function Works(props) {
             subTitle={props.subTitle}
             text={props.text}
           />
-          <MDBCardGroup>
-            <MDBCard className="card">
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg"
-                alt="MDBCard image cap"
-                top
-                hover
-                overlay="white-slight"
-              />
-              <MDBCardBody>
-                <MDBCardTitle tag="h5" className="title">
-                  Panel title
-                </MDBCardTitle>
-                <MDBCardText>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-
-            <MDBCard className="card">
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg"
-                alt="MDBCard image cap"
-                top
-                hover
-                overlay="white-slight"
-              />
-              <MDBCardBody>
-                <MDBCardTitle tag="h5">Panel title</MDBCardTitle>
-                <MDBCardText>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-
-            <MDBCard className="card">
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg"
-                alt="MDBCard image cap"
-                top
-                hover
-                overlay="white-slight"
-              />
-              <MDBCardBody>
-                <MDBCardTitle tag="h5">Panel title</MDBCardTitle>
-                <MDBCardText>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCardGroup>
         </animated.div>
       </Jumbo>
     </Styles>
