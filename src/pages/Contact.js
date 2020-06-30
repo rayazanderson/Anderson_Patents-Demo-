@@ -1,61 +1,135 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
-import { Jumbotron as Jumbo } from "react-bootstrap";
-import styled from "styled-components";
-import lightBulb from "../assets/images/background3.jpg";
+
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+
 import Hero from "../components/Hero/Hero";
+import Content from "../components/Content";
+import Axios from "axios";
 
-const Styles = styled.div`
-  .jumbo {
-    background: url(${lightBulb}) no-repeat center top;
-    background-size: cover;
-    color: #efefef;
-    min-height: 100%;
-    min-width: 100%;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
-  }
-  .overlay {
-    background-color: #000;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+      disabled: false,
+      emailSent: null,
+    };
   }
 
-  @media screen and (max-width: 1024px) {
-    /* Specific to this particular image */
-    img.bg {
-      left: 50%;
-      margin-left: -512px; /* 50% */
-    }
+  handleChange = (event) => {
+    const target = event.target;
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value,
+    });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log(event.target);
+
+    this.setState({
+      disabled: true,
+    });
+
+    Axios.post("http://localhost:3030/api/email", this.state)
+      .then((res) => {
+        if (res.data.success) {
+          this.setState({
+            disabled: false,
+            emailSent: true,
+          });
+        } else {
+          this.setState({
+            disabled: false,
+            emailSent: false,
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+
+        this.setState({
+          disabled: false,
+          emailSent: false,
+        });
+      });
+  };
+
+  render() {
+    return (
+      <div>
+        <Hero title={this.props.title} />
+
+        <Content>
+          <Form onSubmit={this.handleSubmit}>
+            <Form.Group>
+              <Form.Label htmlFor="full-name" style={{ fontSize: 15 }}>
+                Full Name
+              </Form.Label>
+              <Form.Control
+                id="full-name"
+                name="name"
+                type="text"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Label htmlFor="email" style={{ fontSize: 15 }}>
+                Email
+              </Form.Label>
+              <Form.Control
+                id="email"
+                name="email"
+                type="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Label htmlFor="message" style={{ fontSize: 15 }}>
+                Message
+              </Form.Label>
+              <Form.Control
+                id="message"
+                name="message"
+                as="textarea"
+                rows="3"
+                value={this.state.message}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+
+            <Button
+              className="d-inline-block"
+              variant="transparent"
+              type="submit"
+              disabled={this.state.disabled}
+              style={{ fontSize: 20 }}
+            >
+              Send
+            </Button>
+
+            {this.state.emailSent === true && (
+              <p className="d-inline success-msg">Email Sent</p>
+            )}
+            {this.state.emailSent === false && (
+              <p className="d-inline err-msg">Email Not Sent</p>
+            )}
+          </Form>
+        </Content>
+      </div>
+    );
   }
-`;
-
-function Contact(props) {
-  const style = useSpring({ opacity: 1, from: { opacity: 0 } });
-
-  return (
-    <Styles>
-      <Jumbo fluid className="jumbo">
-        <div className="overlay"></div>
-        <animated.div style={style}>
-          <Hero
-            title={props.title}
-            subTitle={props.subTitle}
-            text={props.text}
-          />
-        </animated.div>
-      </Jumbo>
-    </Styles>
-  );
 }
 
 export default Contact;

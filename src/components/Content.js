@@ -2,18 +2,33 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Profile from "../pages/About/Profile";
+import Container from "react-bootstrap/Container";
+import styled from "styled-components";
+
+const Styles = styled.div`
+  .overlay {
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+`;
 
 function Content(props) {
   return (
-    <Row className="">
-      <Col md={4}>
-        <Profile />
-      </Col>
-      <Col md={8}>
-        <Card className="bg-transparent">{props.children}</Card>
-      </Col>
-    </Row>
+    <Styles>
+      <Container fluid={true}>
+        <Row className="justify-content-center">
+          <Col md={8}>
+            <Card className="bg-transparent opacity">{props.children}</Card>
+          </Col>
+        </Row>
+      </Container>
+    </Styles>
   );
 }
 

@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About/About";
 import Works from "./pages/Works/Works";
 import Contact from "./pages/Contact";
+import Container from "@material-ui/core/Container";
 import GlobalStyle from "./styles/Global";
 
 class App extends React.Component {
@@ -35,9 +36,11 @@ class App extends React.Component {
       },
       about: {
         title: "About Me",
+        subTitle: "Protect your Creativity",
+        text: "test",
       },
       works: {
-        title: "What I can do for you",
+        title: "Services I provide",
       },
       contact: {
         title: "Contact Me Here",
@@ -47,37 +50,42 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
-        <Navbar
-          navbarState={this.state.navbarOpen}
-          handleNavbar={this.handleNavbar}
-        />
-        <GlobalStyle />
-        <Route
-          path="/"
-          exact
-          render={() => (
-            <Home
-              title={this.state.home.title}
-              subTitle={this.state.home.subTitle}
-              text={this.state.home.text}
+      <div className="page-container">
+        <div className="content-wrap">
+          <Router>
+            <Container className="pt-5"></Container>
+            <Navbar
+              navbarState={this.state.navbarOpen}
+              handleNavbar={this.handleNavbar}
             />
-          )}
-        />
-        <Route
-          path="/about"
-          render={() => <About title={this.state.about.title} />}
-        />
-        <Route
-          path="/works"
-          render={() => <Works title={this.state.works.title} />}
-        />
-        <Route
-          path="/contact"
-          render={() => <Contact title={this.state.contact.title} />}
-        />
-        <Footer />
-      </Router>
+            <GlobalStyle />
+            <Route
+              path="/"
+              exact
+              render={() => (
+                <Home
+                  title={this.state.home.title}
+                  subTitle={this.state.home.subTitle}
+                  text={this.state.home.text}
+                />
+              )}
+            />
+            <Route
+              path="/about"
+              render={() => <About title={this.state.about.title} />}
+            />
+            <Route
+              path="/works"
+              render={() => <Works title={this.state.works.title} />}
+            />
+            <Route
+              path="/contact"
+              render={() => <Contact title={this.state.contact.title} />}
+            />
+            <Footer />
+          </Router>
+        </div>
+      </div>
     );
   }
 }

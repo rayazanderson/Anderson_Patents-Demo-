@@ -12,11 +12,10 @@ const Styles = styled.div`
   .main-footer {
     position: fixed;
     width: 100%;
-    padding-top: 1rem;
-    background-color: transparent;
+    padding-top: 0.5rem;
+    background-color: black;
     bottom: 0;
     left: 0;
-    box-shadow: 10px 10px 5px 0px rgba(0.25, 0, 0, 0);
     flex-direction: column;
   }
 
@@ -76,8 +75,8 @@ const Footer = () => {
     <Styles>
       <div className="main-footer">
         <Container>
-          <Row className="justify-content-center d-flex mf-5">
-            <Col className="justify-content-center d-flex">
+          <Row className="justify-content-center d-flex">
+            <Col className="justify-content-center mf-5">
               <h6 style={{ fontsize: 20 }}>Let's Connect:</h6>
               <ul className="list-unstyled">
                 <li>
@@ -93,7 +92,7 @@ const Footer = () => {
                 </li>
               </ul>
             </Col>
-            <Col className="justify-content-center d-flex">
+            <Col className="justify-content-center mf-5">
               <h6 style={{ fontsize: 20 }}>My Contacts: </h6>
               <ul className="list-unstyled">
                 <li>
@@ -114,7 +113,7 @@ const Footer = () => {
                 reserved | Terms of Service | Privacy{" "}
               </h7>
             </Col>
-            <Col className="justify-content-end d-flex p=0" md={4}>
+            <Col className="p-0 d-flex justify-content-end" md={3}>
               <h7>This site was made by Raya Anderson</h7>
             </Col>
           </Row>

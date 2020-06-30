@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-    height: 100%;
   }
 
   h6 {
@@ -39,11 +38,23 @@ const GlobalStyles = createGlobalStyle`
     font-weight: bold;
     font-size: 14px;
   }
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    flex: 1;
+  }
 
   body {
     box-sizing: border-box;
     font-family: "Abhaya Libre", serif;
     background: black;
+    overflow: "auto",
+          height: "inherit",
+          display: "block",
   }
 `;
 

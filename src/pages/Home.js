@@ -12,7 +12,7 @@ const Styles = styled.div`
     color: #efefef;
     min-height: 100%;
     min-width: 100%;
-    width: 100%;
+    width: 700px;
     height: auto;
     position: fixed;
     top: 0;
@@ -43,7 +43,17 @@ function Home(props) {
   const style = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
     <Styles>
-      <Jumbo fluid className="jumbo">
+      <Jumbo
+        fluid
+        className="jumbo"
+        style={{
+          overflow: "auto",
+          height: "inherit",
+          display: "block",
+          maxWidth: 300,
+          marginLeft: 20,
+        }}
+      >
         <div className="overlay"></div>
         <animated.div style={style}>
           <Hero
