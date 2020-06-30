@@ -66,7 +66,7 @@ class App extends React.Component {
             />
           )}
         />
-        {/* <Route
+        <Route
           path="/about"
           render={() => <About title={this.state.about.title} />}
         />
@@ -77,10 +77,7 @@ class App extends React.Component {
         <Route
           path="/contact"
           render={() => <Contact title={this.state.contact.title} />}
-        /> */}
-        {/* <About />
-        <Works />
-        <Contact /> */}
+        />
         <Footer />
       </Router>
     );

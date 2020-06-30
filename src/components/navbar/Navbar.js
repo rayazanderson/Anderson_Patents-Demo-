@@ -67,7 +67,7 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: tranparent;
+  background: black;
   z-index: 5000;
   font-size: 1.2rem;
 `;
@@ -78,7 +78,7 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 3rem;
   justify-content: space-between;
-  height: 8rem;
+  height: 7rem;
 `;
 
 const NavLinks = styled(animated.ul)`
@@ -92,7 +92,7 @@ const NavLinks = styled(animated.ul)`
     text-transform: uppercase;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
-    transition: all 300ms linear 0s;
+    transition: all 200ms linear 0s;
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
