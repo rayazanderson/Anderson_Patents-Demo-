@@ -46,9 +46,6 @@ function Home(props) {
       <Jumbo fluid className="jumbo">
         <div className="overlay"></div>
         <animated.div style={style}>
-          <br />
-          <br />
-          <br />
           <Hero
             title={props.title}
             subTitle={props.subTitle}

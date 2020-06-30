@@ -4,16 +4,6 @@ import Content from "../../components/Content";
 import styled from "styled-components";
 import { Jumbotron as Jumbo } from "react-bootstrap";
 import lightBulb from "../../assets/images/background3.jpg";
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-} from "mdbreact";
 
 import Hero from "../../components/Hero/Hero";
 
@@ -49,28 +39,6 @@ const Styles = styled.div`
       margin-left: -512px; /* 50% */
     }
   }
-
-  h2 {
-    font-family: "Abhaya Libre", serif;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    padding-top: 20px;
-    color: #dfe6e9;
-    display: flex;
-  }
-
-  p {
-    font-family: "Abhaya Libre", serif;
-    font-size: 2rem;
-    font-weight: 200;
-    margin-right: 70%;
-    padding: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    color: #dfe6e9;
-    display: flex;
-  }
 `;
 
 function About(props) {
@@ -80,9 +48,6 @@ function About(props) {
       <Jumbo fluid className="jumbo">
         <div className="overlay"></div>
         <animated.div style={style}>
-          <br />
-          <br />
-          <br />
           <Hero title={props.title} subTitle={props.subTitle} text={props.text}>
             {/* <Col md="6" xs={{ order: 4 }}>
         {props.title && (

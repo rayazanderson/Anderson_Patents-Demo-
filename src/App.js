@@ -35,11 +35,9 @@ class App extends React.Component {
       },
       about: {
         title: "About Me",
-        subTitle: "Protect your Creativity",
-        text: "test",
       },
       works: {
-        title: "Services I provide",
+        title: "What I can do for you",
       },
       contact: {
         title: "Contact Me Here",

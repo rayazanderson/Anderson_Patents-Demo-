@@ -24,7 +24,7 @@ function Hero(props) {
   return (
     <Styles>
       <animated.div className="a-card-info" style={style}>
-        <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+        <Jumbotron className="bg-transparent jumbotron-fluid mt-5">
           <Container fluid={true}>
             <Row className="justify-content-center">
               <Col md={8} sm={12}>

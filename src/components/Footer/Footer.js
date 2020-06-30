@@ -13,7 +13,7 @@ const Styles = styled.div`
     position: fixed;
     width: 100%;
     padding-top: 1rem;
-    background-color: #151b54;
+    background-color: transparent;
     bottom: 0;
     left: 0;
     box-shadow: 10px 10px 5px 0px rgba(0.25, 0, 0, 0);
@@ -76,7 +76,7 @@ const Footer = () => {
     <Styles>
       <div className="main-footer">
         <Container>
-          <Row className="justify-content-center d-flex">
+          <Row className="justify-content-center d-flex mf-5">
             <Col>
               <h6 style={{ fontsize: 20 }}>Let's Connect:</h6>
               <ul className="list-unstyled">
